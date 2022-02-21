@@ -16,7 +16,7 @@ const startApp = (utilTypes) => {
   console.log('===================================');
   console.log(WELCOME);
   console.log('------------------------------------')
-  utilities.forEach((util, index) => console.log(`${index+1}. ${util}`));
+  utilTypes.forEach((util, index) => console.log(`${index+1}. ${util}`));
   readOption();
   visitAgain();
 };
