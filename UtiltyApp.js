@@ -144,7 +144,7 @@ function hashString() {
   const algo = parseInt(readLineSync.question("Enter a num 1-4: "));
   const str = readLineSync.question("enter string to hash: ");
 
-  const hash = crypto.createHash(algos[algo + 1]).update(str).digest('hex');
+  const hash = crypto.createHash(algos[algo - 1]).update(str).digest('hex');
   console.log("hashed stinrg : ", hash);
 
 }
